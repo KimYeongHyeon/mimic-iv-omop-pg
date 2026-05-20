@@ -37,7 +37,7 @@ a source. Contents (260K patient subset of MIMIC-IV 2.2):
 ## Requirements
 
 - An **already-running OHDSI Broadsea** stack (`broadsea-atlasdb` + `ohdsi-webapi` + `ohdsi-atlas` containers).
-- Athena vocabulary loaded into some schema (default: `synthea_cdm_aristotle.*` — set `VOCAB_SOURCE_SCHEMA` to override).
+- Athena vocabulary (Standardized Vocabularies bundle from athena.ohdsi.org) already loaded into a Postgres schema in the same `broadsea-atlasdb` database. The script reads it through the `VOCAB_SOURCE_SCHEMA` env var; the placeholder default `omop_vocab` is rarely correct for your install — point it at whatever schema you actually loaded into.
 - PhysioNet credentialed access to MIMIC-IV 2.2 (you download `MIMIC-IV-2.2.zip` yourself).
 - Disk: ~250 GB free.
 - ~5 hours total ETL time.
@@ -58,7 +58,7 @@ export ATLASDB_CONTAINER=broadsea-atlasdb     # default
 export ATLASDB_USER=postgres
 export ATLASDB_PASS=mypass
 export ATLASDB_DB=ohdsi
-export VOCAB_SOURCE_SCHEMA=synthea_cdm_aristotle
+export VOCAB_SOURCE_SCHEMA=omop_vocab    # REQUIRED: replace with the actual schema name where you loaded Athena vocab
 
 # 3. Run everything (idempotent; ~5 hours)
 ./run.sh
@@ -95,7 +95,7 @@ delete its `logs/etl/<step>.done` marker and re-run.
                        ┌────────────────────────────────────────────────┐
    MIMIC-IV-2.2.zip────▶ mimiciv_hosp / icu / note  (raw, 35 tables)    │
                        │                                                │
-                       │ synthea_cdm_aristotle.concept (6.3M Athena)    │
+                       │ $VOCAB_SOURCE_SCHEMA.concept (6.3M Athena)      │
                        │       ↑   (read-only view)                     │
                        │ mimiciv_voc.concept    (view)                  │
                        │                                                │
@@ -235,7 +235,7 @@ All knobs are env vars; defaults are for the stock Broadsea deployment:
 | `ATLASDB_CONTAINER` | `broadsea-atlasdb` | Docker name of the Postgres container |
 | `ATLASDB_NETWORK` | `broadsea_default` | Docker network for sidecar |
 | `ATLASDB_USER` / `_PASS` / `_DB` | `postgres` / `mypass` / `ohdsi` | DB credentials |
-| `VOCAB_SOURCE_SCHEMA` | `synthea_cdm_aristotle` | Where Athena vocab already lives |
+| `VOCAB_SOURCE_SCHEMA` | `omop_vocab` (placeholder) | Schema in `ATLASDB_DB` that already contains the 6.3M Athena Standardized Vocabularies. **Must be overridden** to the actual schema name on your install. |
 | `MIMIC_DATA_DIR` | `./data/MIMIC-IV-2.2` | Extracted CSVs (after unzip) |
 
 ---

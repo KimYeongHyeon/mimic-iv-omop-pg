@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Create mimiciv_etl, mimiciv_voc, mimiciv_cdm schemas.
-# - mimiciv_voc: views pointing at the existing Athena vocab in synthea_cdm_aristotle
+# - mimiciv_voc: views pointing at the existing Athena vocab (schema set by $VOCAB_SOURCE_SCHEMA)
 # - mimiciv_etl: intermediate tables (src_*, lk_*, tmp_*, cdm_*)
 # - mimiciv_cdm: final CDM unloaded for ATLAS
 set -euo pipefail
@@ -17,7 +17,7 @@ if [ -n "${EXISTING:-}" ]; then
 fi
 
 # Verify source vocab schema exists and has 6.3M concepts
-VOC_SOURCE=synthea_cdm_aristotle
+VOC_SOURCE="${VOCAB_SOURCE_SCHEMA:-omop_vocab}"
 CNT=$(docker exec broadsea-atlasdb psql -U postgres -d ohdsi -tAc \
   "select count(*) from ${VOC_SOURCE}.concept;")
 echo "[$(date +%H:%M:%S)] source vocab ${VOC_SOURCE}.concept count = $CNT" | tee -a "$LOG"
