@@ -24,14 +24,62 @@ SOFTWARE.
 Third-party data and code attribution
 ============================================================================
 
-This repository derives from / wraps the following projects:
+This repository derives from / wraps the following projects. Each retains
+its original license; only the wrapper code in this repo is covered by the
+MIT license above.
 
-- OHDSI/MIMIC (https://github.com/OHDSI/MIMIC), Apache 2.0
-  SQL ETL definitions, custom mapping CSVs, and workflow conf are
-  copyrighted (c) 2020 Odysseus Data Services, Inc.
+CODE
+----
+- OHDSI/MIMIC                  https://github.com/OHDSI/MIMIC
+  License: Apache 2.0          https://github.com/OHDSI/MIMIC/blob/master/LICENSE
+  (c) 2020 Odysseus Data Services, Inc.
+  Used for: BigQuery ETL SQL, custom mapping CSVs, workflow configs
 
-- MIT-LCP/mimic-code (https://github.com/MIT-LCP/mimic-code), MIT
-  Source-schema DDL and load scripts for MIMIC-IV.
+- MIT-LCP/mimic-code           https://github.com/MIT-LCP/mimic-code
+  License: MIT                 https://github.com/MIT-LCP/mimic-code/blob/main/LICENSE
+  Used for: Canonical Postgres DDL for mimiciv_hosp/icu/note schemas
 
-- MIMIC-IV dataset (https://physionet.org/content/mimiciv/) — NOT included.
-  Requires PhysioNet credentialed access; do not commit data files.
+- OHDSI/CommonDataModel        https://github.com/OHDSI/CommonDataModel
+  License: Apache 2.0          https://github.com/OHDSI/CommonDataModel/blob/main/LICENSE
+  Used for: OMOP CDM v5.3.1 schema specification
+
+- OHDSI/Broadsea               https://github.com/OHDSI/Broadsea
+  License: Apache 2.0          https://github.com/OHDSI/Broadsea/blob/main/LICENSE
+  Used for: Host environment (Postgres + WebAPI + ATLAS containers)
+
+- OHDSI/Atlas                  https://github.com/OHDSI/Atlas
+  License: Apache 2.0          https://github.com/OHDSI/Atlas/blob/main/LICENSE
+  Used for: CDM exploration / cohort definition UI
+
+- OHDSI/WebAPI                 https://github.com/OHDSI/WebAPI
+  License: Apache 2.0          https://github.com/OHDSI/WebAPI/blob/master/LICENSE
+  Used for: Source registration backend
+
+- OHDSI/DataQualityDashboard   https://github.com/OHDSI/DataQualityDashboard
+  License: Apache 2.0          (optional, for exhaustive CDM validation)
+
+- OHDSI/Achilles               https://github.com/OHDSI/Achilles
+  License: Apache 2.0          (optional, for ATLAS dashboards)
+
+RUNTIME
+-------
+- PostgreSQL                   https://www.postgresql.org/
+  License: PostgreSQL License  https://www.postgresql.org/about/licence/
+
+- Docker                       https://www.docker.com/
+  License: Apache 2.0          https://github.com/moby/moby/blob/master/LICENSE
+
+VOCABULARY
+----------
+- Athena standard vocabulary   https://athena.ohdsi.org/
+  License: OHDSI Vocabulary License (per-vocabulary terms apply; see
+  https://athena.ohdsi.org/vocabulary/list for SNOMED, RxNorm, LOINC etc.)
+
+DATA — NOT REDISTRIBUTED
+------------------------
+- MIMIC-IV dataset             https://physionet.org/content/mimiciv/2.2/
+  Available only via PhysioNet credentialed access. Requires:
+    1. CITI Data or Specimens Only Research course completion
+    2. Signed PhysioNet Credentialed Health Data Use Agreement
+    3. Acceptance of the MIMIC-IV Data Use Agreement
+  Do not commit MIMIC data files to this or any public repository.
