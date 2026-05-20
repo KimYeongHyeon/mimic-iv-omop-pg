@@ -187,7 +187,7 @@ Full details: [docs/CONVERSION_PATTERNS.md](docs/CONVERSION_PATTERNS.md).
 
 Full reports:
 - **[docs/VERIFICATION.md](docs/VERIFICATION.md)** — what we tested, how, what we did **not** test.
-- **[docs/DQD_RESULTS.md](docs/DQD_RESULTS.md)** — full DataQualityDashboard run with root-cause analysis of the 85 demo failures (none originate in our port).
+- **[docs/DQD_RESULTS.md](docs/DQD_RESULTS.md)** — DataQualityDashboard demo (100 pts, 85 failures) **and** full (260K pts, 93 failures, 92 post-Group-E-fix) runs with root-cause analysis. Zero failures originate in our port code.
 
 Short version: ran `./run.sh m7` plus a separate demo-subset run, then ran
 [OHDSI's own unit-test suite](https://github.com/MIT-LCP/mimic-iv-demo-omop/tree/master/test/ut)
@@ -210,9 +210,13 @@ against our output:
   execution; see [docs/VERIFICATION.md §L1](docs/VERIFICATION.md). Some
   fields (`*_id` from FARM_FINGERPRINT vs md5, `trace_id` JSON key order)
   will inherently differ even with bit-perfect logic.
-- **DataQualityDashboard full sweep (~3,500 checks)**: demo (100 patients) complete
-  with 93.5 % pass rate on applicable checks; full 260K run in progress, results
-  appended to [docs/DQD_RESULTS.md](docs/DQD_RESULTS.md) on completion.
+- **DataQualityDashboard full sweep (1,990 checks)** — both runs complete:
+  demo (100 pts, 17 min) at 93.5 % pass on applicable checks; full
+  (260K pts, 6 h 38 min) at 93.77 % pre-fix / **93.84 % after Group E ETL gap
+  resolved**. Of 93 full-run failures, 92 are inherited limitations (MIMIC
+  date shift, OHDSI 64-bit IDs, custom-vocab long tail, MIMIC source coding
+  artifacts) and 1 was a re-runnable ETL step — all detailed in
+  [docs/DQD_RESULTS.md](docs/DQD_RESULTS.md).
 - **MIMIC-IV v3.1 NOT supported** (only v2.2).
 - **Waveform module stubbed empty**.
 
