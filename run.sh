@@ -16,6 +16,8 @@
 #   m5  run full ETL chain (36 SQL files) (~2-3 h)
 #   m6  publish mimiciv_cdm views + register in WebAPI
 #   m7  verify CDM quality (structural / cardinality / mapping / FK)
+#   m8  init results schema for ATLAS cohort/profiles (36 tables)
+#   m9  run Achilles characterization (~1.5-3 h) — enables ATLAS dashboards
 #
 set -euo pipefail
 cd "$(dirname "$0")"
@@ -120,6 +122,16 @@ m7_verify() {
   ./scripts/07_verify_cdm.sh
 }
 
+m8_results_schema() {
+  echo "=== M8: Init results schema (ATLAS cohort/profile tables) ==="
+  ./scripts/08_init_results_schema.sh
+}
+
+m9_achilles() {
+  echo "=== M9: Run Achilles characterization (~1.5-3 h) ==="
+  ./scripts/09_run_achilles.sh
+}
+
 case "$PHASE" in
   m0|check)       m0_check ;;
   m1)             m0_check; m1_load_raw ;;
@@ -129,10 +141,13 @@ case "$PHASE" in
   m5)             m5_etl ;;
   m6|publish)     m6_publish ;;
   m7|verify)      m7_verify ;;
+  m8|results)     m8_results_schema ;;
+  m9|achilles)    m9_achilles ;;
   m1-m2)          m0_check; m1_load_raw; m2_port_sql ;;
   m2-m5)          m2_port_sql; m3_schemas; m4_custom_vocab; m5_etl ;;
-  all|"")         m0_check; m1_load_raw; m2_port_sql; m3_schemas; m4_custom_vocab; m5_etl; m6_publish; m7_verify ;;
-  *)              echo "usage: $0 [m0|m1|m2|m3|m4|m5|m6|m7|all]"; exit 2 ;;
+  m8-m9)          m8_results_schema; m9_achilles ;;
+  all|"")         m0_check; m1_load_raw; m2_port_sql; m3_schemas; m4_custom_vocab; m5_etl; m6_publish; m7_verify; m8_results_schema; m9_achilles ;;
+  *)              echo "usage: $0 [m0|m1|m2|m3|m4|m5|m6|m7|m8|m9|all]"; exit 2 ;;
 esac
 
 echo

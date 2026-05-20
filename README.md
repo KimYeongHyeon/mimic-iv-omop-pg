@@ -78,6 +78,8 @@ export VOCAB_SOURCE_SCHEMA=synthea_cdm_aristotle
 ./run.sh m5    # ~3 h, run full ETL chain
 ./run.sh m6    # ~5 sec, publish mimiciv_cdm views
 ./run.sh m7    # ~30 sec, verification report
+./run.sh m8    # ~10 sec, init results schema (ATLAS cohort/profile tables)
+./run.sh m9    # ~1.5-3 h, run Achilles → enables ATLAS Data Source dashboard
 ```
 
 Phases are independent and idempotent. To re-run any single step in m5,
