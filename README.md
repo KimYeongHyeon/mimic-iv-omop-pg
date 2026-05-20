@@ -140,18 +140,38 @@ Full details: [docs/CONVERSION_PATTERNS.md](docs/CONVERSION_PATTERNS.md).
 
 ## Verification
 
-After `./run.sh m7`:
+Full report: **[docs/VERIFICATION.md](docs/VERIFICATION.md)** (what we tested,
+how, and what we did **not** test).
+
+Short version: ran `./run.sh m7` plus a separate demo-subset run, then ran
+[OHDSI's own unit-test suite](https://github.com/MIT-LCP/mimic-iv-demo-omop/tree/master/test/ut)
+against our output:
 
 | Check | Pass criterion | Result |
 |---|---|---|
-| Structural | 38 views in mimiciv_cdm | PASS 38/38 |
-| Cardinality | person ≥ 250K, measurement ≥ 100M | PASS |
-| Mapping quality | ≥ 50% concept_id > 0 per domain | PASS all domains |
-| Referential integrity | 0 FK orphans | PASS |
-| Date sanity | 0 visit_end < visit_start | PASS |
+| Structural | 38 views in mimiciv_cdm | **38 / 38** |
+| Source row counts | match PhysioNet published values | **all match** |
+| Cardinality | person ≥ 250K, measurement ≥ 100M | **PASS** |
+| Mapping quality | ≥ 50 % concept_id > 0 per domain | **94-100 %** all domains |
+| Referential integrity | 0 FK orphans | **0** |
+| Date sanity | 0 visit_end < visit_start | **0** |
+| OHDSI unit tests | extracted from MIT-LCP/mimic-iv-demo-omop | **24 / 24** PASS on valid SQL |
+| Source → CDM conservation | type_concept_id provenance check | **6 / 6** plausible |
 
-For exhaustive validation, point [DataQualityDashboard](https://github.com/OHDSI/DataQualityDashboard)
-at `mimiciv_cdm` schema. ~3,500 checks, ~2-3 hours.
+### What this does NOT prove
+
+- **Row-identical to BigQuery output is NOT verified**. That requires GCP
+  execution; see [docs/VERIFICATION.md §L1](docs/VERIFICATION.md). Some
+  fields (`*_id` from FARM_FINGERPRINT vs md5, `trace_id` JSON key order)
+  will inherently differ even with bit-perfect logic.
+- **DataQualityDashboard full sweep (~3,500 checks) NOT run**. The HADES
+  container has DQD 2.8.0 ready; a future `m10_dqd.sh` could add it.
+- **MIMIC-IV v3.1 NOT supported** (only v2.2).
+- **Waveform module stubbed empty**.
+
+The claim is *functional equivalence* to the BigQuery output (same domain
+assignments, same conservation laws, passes the same unit tests), not
+*bit-identical equivalence*.
 
 ---
 
