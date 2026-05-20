@@ -181,9 +181,36 @@ All knobs are env vars; defaults are for the stock Broadsea deployment:
 
 ---
 
-## License
+## License & attributions
 
-This wrapper code: MIT (see LICENSE).
-OHDSI/MIMIC SQL: Apache 2.0 by Odysseus Data Services, Inc.
-MIT-LCP/mimic-code DDL: MIT.
-MIMIC-IV dataset: PhysioNet credentialed access only; not distributed here.
+This repository wraps and adapts several upstream projects. Each component
+keeps its original license; the wrapper code in this repo is MIT.
+
+| Component | Origin | License | What we use it for |
+|---|---|---|---|
+| This wrapper (`run.sh`, `scripts/*`, `bq_to_pg.py`, patches, docs) | this repo | [MIT](LICENSE) | E2E orchestration + BQ→PG conversion |
+| ETL SQL & custom mapping CSVs | [OHDSI/MIMIC](https://github.com/OHDSI/MIMIC) (Odysseus Data Services, Inc.) | [Apache 2.0](https://github.com/OHDSI/MIMIC/blob/master/LICENSE) | Source of the BigQuery ETL we port to Postgres |
+| MIMIC-IV source schema DDL | [MIT-LCP/mimic-code](https://github.com/MIT-LCP/mimic-code) | [MIT](https://github.com/MIT-LCP/mimic-code/blob/main/LICENSE) | Canonical `mimiciv_hosp`/`icu`/`note` DDL |
+| OMOP Common Data Model v5.3.1 | [OHDSI/CommonDataModel](https://github.com/OHDSI/CommonDataModel) | [Apache 2.0](https://github.com/OHDSI/CommonDataModel/blob/main/LICENSE) | Target schema standard |
+| Athena standard vocabulary | [athena.ohdsi.org](https://athena.ohdsi.org) | [OHDSI Vocabulary License](https://athena.ohdsi.org/vocabulary/list) | 6.3M standard concepts (loaded separately) |
+| OHDSI Broadsea stack | [OHDSI/Broadsea](https://github.com/OHDSI/Broadsea) | [Apache 2.0](https://github.com/OHDSI/Broadsea/blob/main/LICENSE) | Postgres + WebAPI + ATLAS host environment |
+| ATLAS UI | [OHDSI/Atlas](https://github.com/OHDSI/Atlas) | [Apache 2.0](https://github.com/OHDSI/Atlas/blob/main/LICENSE) | Cohort/analytics interface for the published CDM |
+| WebAPI | [OHDSI/WebAPI](https://github.com/OHDSI/WebAPI) | [Apache 2.0](https://github.com/OHDSI/WebAPI/blob/master/LICENSE) | Source registration backend |
+| DataQualityDashboard (suggested) | [OHDSI/DataQualityDashboard](https://github.com/OHDSI/DataQualityDashboard) | [Apache 2.0](https://github.com/OHDSI/DataQualityDashboard/blob/main/LICENSE) | Exhaustive CDM validation (3,500+ checks) |
+| Achilles (suggested) | [OHDSI/Achilles](https://github.com/OHDSI/Achilles) | [Apache 2.0](https://github.com/OHDSI/Achilles/blob/main/LICENSE) | Characterization for the ATLAS data-source dashboard |
+| PostgreSQL | [postgresql.org](https://www.postgresql.org/) | [PostgreSQL License](https://www.postgresql.org/about/licence/) | Runtime database (Postgres 16) |
+| Docker | [docker.com](https://www.docker.com/) | [Apache 2.0](https://github.com/moby/moby/blob/master/LICENSE) | Sidecar containers + Broadsea hosting |
+
+### Data — important
+
+The **MIMIC-IV** dataset itself is **NOT redistributed** here.
+It is available only via PhysioNet credentialed access:
+[https://physionet.org/content/mimiciv/2.2/](https://physionet.org/content/mimiciv/2.2/)
+
+Loading and analyzing MIMIC-IV requires:
+1. Completion of the [CITI Data or Specimens Only Research course](https://physionet.org/about/citi-course/)
+2. Signed [PhysioNet Credentialed Health Data Use Agreement](https://physionet.org/content/mimiciv/view-dua/2.2/)
+3. Acceptance of the MIMIC-IV Data Use Agreement specifically
+
+If you publish work using MIMIC-IV, cite:
+> Johnson, A., Bulgarelli, L., Pollard, T., Horng, S., Celi, L. A., & Mark, R. (2023). MIMIC-IV (version 2.2). PhysioNet. https://doi.org/10.13026/6mm1-ek67
