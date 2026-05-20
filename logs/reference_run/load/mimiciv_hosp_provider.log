@@ -1,0 +1,4 @@
+SET
+TRUNCATE TABLE
+COPY 40508
+[19:47:35] ROWS mimiciv_hosp.provider = 40508

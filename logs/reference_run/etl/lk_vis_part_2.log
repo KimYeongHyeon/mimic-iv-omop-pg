@@ -1,0 +1,24 @@
+NOTICE:  table "lk_visit_no_hadm_all" does not exist, skipping
+DROP TABLE
+SELECT 47184539
+NOTICE:  table "lk_visit_no_hadm_dist" does not exist, skipping
+DROP TABLE
+SELECT 1912999
+NOTICE:  table "lk_visit_detail_waveform_dist" does not exist, skipping
+DROP TABLE
+SELECT 0
+DROP TABLE
+NOTICE:  table "lk_visit_clean" does not exist, skipping
+SELECT 2344230
+NOTICE:  table "lk_visit_detail_clean" does not exist, skipping
+DROP TABLE
+SELECT 1129855
+INSERT 0 299282
+INSERT 0 36556
+INSERT 0 0
+NOTICE:  table "lk_visit_detail_prev_next" does not exist, skipping
+DROP TABLE
+SELECT 1465693
+DROP TABLE
+NOTICE:  table "lk_visit_concept" does not exist, skipping
+SELECT 0

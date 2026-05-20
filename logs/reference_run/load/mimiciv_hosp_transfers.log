@@ -1,0 +1,4 @@
+SET
+TRUNCATE TABLE
+COPY 1890972
+[19:48:33] ROWS mimiciv_hosp.transfers = 1890972

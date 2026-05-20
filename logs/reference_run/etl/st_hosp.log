@@ -1,0 +1,33 @@
+DROP TABLE
+NOTICE:  table "src_diagnoses_icd" does not exist, skipping
+SELECT 4756326
+NOTICE:  table "src_services" does not exist, skipping
+DROP TABLE
+SELECT 468029
+NOTICE:  table "src_labevents" does not exist, skipping
+DROP TABLE
+SELECT 118171367
+DROP TABLE
+NOTICE:  table "src_d_labitems" does not exist, skipping
+NOTICE:  table "src_procedures_icd" does not exist, skipping
+SELECT 1622
+DROP TABLE
+SELECT 669186
+DROP TABLE
+NOTICE:  table "src_hcpcsevents" does not exist, skipping
+SELECT 150771
+NOTICE:  table "src_drgcodes" does not exist, skipping
+DROP TABLE
+SELECT 604377
+NOTICE:  table "src_prescriptions" does not exist, skipping
+DROP TABLE
+SELECT 15416708
+DROP TABLE
+NOTICE:  table "src_microbiologyevents" does not exist, skipping
+SELECT 3228713
+NOTICE:  table "src_d_micro" does not exist, skipping
+DROP TABLE
+NOTICE:  table "src_pharmacy" does not exist, skipping
+SELECT 954
+DROP TABLE
+SELECT 13584514

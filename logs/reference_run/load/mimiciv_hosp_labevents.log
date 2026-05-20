@@ -1,0 +1,4 @@
+SET
+TRUNCATE TABLE
+COPY 118171367
+[19:58:27] DONE mimiciv_hosp.labevents rows=118171367 secs=194

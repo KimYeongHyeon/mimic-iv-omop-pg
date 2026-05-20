@@ -1,0 +1,4 @@
+SET
+TRUNCATE TABLE
+COPY 54744789
+[19:52:35] DONE mimiciv_hosp.emar_detail rows=54744789 secs=60

@@ -1,0 +1,27 @@
+NOTICE:  view "voc_concept" does not exist, skipping
+DROP VIEW
+NOTICE:  view "voc_concept_relationship" does not exist, skipping
+CREATE VIEW
+DROP VIEW
+NOTICE:  view "voc_vocabulary" does not exist, skipping
+CREATE VIEW
+DROP VIEW
+NOTICE:  view "voc_domain" does not exist, skipping
+CREATE VIEW
+DROP VIEW
+CREATE VIEW
+NOTICE:  view "voc_concept_class" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+NOTICE:  view "voc_relationship" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+NOTICE:  view "voc_concept_synonym" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+NOTICE:  view "voc_concept_ancestor" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+NOTICE:  view "voc_drug_strength" does not exist, skipping
+DROP VIEW
+CREATE VIEW

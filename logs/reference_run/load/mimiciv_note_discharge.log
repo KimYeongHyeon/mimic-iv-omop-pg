@@ -1,0 +1,4 @@
+SET
+TRUNCATE TABLE
+COPY 331793
+[19:55:13] DONE mimiciv_note.discharge rows=331793 secs=57

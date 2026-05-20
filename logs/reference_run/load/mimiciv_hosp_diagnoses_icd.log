@@ -1,0 +1,4 @@
+SET
+TRUNCATE TABLE
+COPY 4756326
+[19:48:30] ROWS mimiciv_hosp.diagnoses_icd = 4756326

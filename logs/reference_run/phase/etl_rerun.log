@@ -1,0 +1,58 @@
+[08:41:05] SKIP 01_staging/st_core.sql (done)
+[08:41:05] SKIP 01_staging/st_hosp.sql (done)
+[08:41:05] SKIP 01_staging/st_icu.sql (done)
+[08:41:05] SKIP 01_staging/voc_copy_to_target_dataset.sql (done)
+[08:41:05] SKIP 02_etl/cdm_location.sql (done)
+[08:41:05] SKIP 02_etl/cdm_care_site.sql (done)
+[08:41:05] SKIP 02_etl/cdm_person.sql (done)
+[08:41:05] SKIP 02_etl/cdm_death.sql (done)
+[08:41:05] SKIP 02_etl/lk_vis_part_1.sql (done)
+[08:41:05] RUN  02_etl/lk_meas_unit.sql
+[08:43:36] OK   02_etl/lk_meas_unit.sql  151s
+[08:43:36] RUN  02_etl/lk_meas_chartevents.sql
+[09:14:39] OK   02_etl/lk_meas_chartevents.sql  1863s
+[09:14:39] RUN  02_etl/lk_meas_labevents.sql
+[09:29:39] OK   02_etl/lk_meas_labevents.sql  900s
+[09:29:39] RUN  02_etl/lk_meas_specimen.sql
+[09:30:50] OK   02_etl/lk_meas_specimen.sql  71s
+[09:30:50] RUN  02_etl/lk_meas_outputevents.sql
+[09:31:10] OK   02_etl/lk_meas_outputevents.sql  20s
+[09:31:10] SKIP 02_etl/lk_vis_part_2.sql (done)
+[09:31:10] SKIP 02_etl/cdm_visit_occurrence.sql (done)
+[09:31:10] SKIP 02_etl/cdm_visit_detail.sql (done)
+[09:31:10] RUN  02_etl/lk_cond_diagnoses.sql
+[09:31:45] OK   02_etl/lk_cond_diagnoses.sql  35s
+[09:31:45] RUN  02_etl/lk_procedure.sql
+[09:32:37] OK   02_etl/lk_procedure.sql  52s
+[09:32:37] RUN  02_etl/lk_observation.sql
+[09:32:55] OK   02_etl/lk_observation.sql  18s
+[09:32:55] RUN  02_etl/cdm_condition_occurrence.sql
+[09:36:51] OK   02_etl/cdm_condition_occurrence.sql  236s
+[09:36:51] RUN  02_etl/cdm_procedure_occurrence.sql
+[09:38:57] OK   02_etl/cdm_procedure_occurrence.sql  126s
+[09:38:57] RUN  02_etl/cdm_specimen.sql
+[09:39:00] OK   02_etl/cdm_specimen.sql  3s
+[09:39:00] RUN  02_etl/cdm_measurement.sql
+[09:49:49] OK   02_etl/cdm_measurement.sql  649s
+[09:49:49] RUN  02_etl/lk_drug.sql
+[09:53:16] OK   02_etl/lk_drug.sql  207s
+[09:53:16] RUN  02_etl/cdm_drug_exposure.sql
+[09:54:31] OK   02_etl/cdm_drug_exposure.sql  75s
+[09:54:31] RUN  02_etl/cdm_device_exposure.sql
+[09:56:15] OK   02_etl/cdm_device_exposure.sql  104s
+[09:56:15] RUN  02_etl/cdm_observation.sql
+[09:58:18] OK   02_etl/cdm_observation.sql  123s
+[09:58:18] SKIP 02_etl/cdm_observation_period.sql (done)
+[09:58:18] SKIP 02_etl/cdm_finalize_person.sql (done)
+[09:58:18] RUN  02_etl/cdm_fact_relationship.sql
+[09:58:41] OK   02_etl/cdm_fact_relationship.sql  23s
+[09:58:41] RUN  02_etl/cdm_condition_era.sql
+[09:59:52] OK   02_etl/cdm_condition_era.sql  71s
+[09:59:52] RUN  02_etl/cdm_drug_era.sql
+[10:04:35] OK   02_etl/cdm_drug_era.sql  283s
+[10:04:35] RUN  02_etl/cdm_dose_era.sql
+[10:05:52] OK   02_etl/cdm_dose_era.sql  77s
+[10:05:52] SKIP 02_etl/ext_d_itemid_to_concept.sql (done)
+[10:05:52] SKIP 02_etl/cdm_cdm_source.sql (done)
+[10:05:52] SKIP 02_etl/cdm_provider.sql (done)
+[10:05:52] ETL chain complete.

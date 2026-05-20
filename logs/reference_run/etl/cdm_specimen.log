@@ -1,0 +1,4 @@
+NOTICE:  drop cascades to view mimiciv_cdm.specimen
+DROP TABLE
+CREATE TABLE
+INSERT 0 1428042

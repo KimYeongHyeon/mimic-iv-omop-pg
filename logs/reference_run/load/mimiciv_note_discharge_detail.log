@@ -1,0 +1,4 @@
+SET
+TRUNCATE TABLE
+COPY 186138
+[19:49:01] ROWS mimiciv_note.discharge_detail = 186138

@@ -1,0 +1,4 @@
+SET
+TRUNCATE TABLE
+COPY 8978893
+[19:50:43] DONE mimiciv_icu.inputevents rows=8978893 secs=32

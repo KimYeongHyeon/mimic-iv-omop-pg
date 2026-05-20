@@ -1,0 +1,9 @@
+NOTICE:  table "src_patients" does not exist, skipping
+DROP TABLE
+SELECT 299712
+DROP TABLE
+NOTICE:  table "src_admissions" does not exist, skipping
+SELECT 431231
+DROP TABLE
+NOTICE:  table "src_transfers" does not exist, skipping
+SELECT 1890972

@@ -1,0 +1,10 @@
+NOTICE:  table "tmp_subject_ethnicity" does not exist, skipping
+DROP TABLE
+SELECT 180733
+NOTICE:  table "lk_pat_ethnicity_concept" does not exist, skipping
+DROP TABLE
+SELECT 33
+DROP TABLE
+CREATE TABLE
+INSERT 0 299712
+DROP TABLE

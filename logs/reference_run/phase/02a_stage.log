@@ -1,0 +1,97 @@
+[19:48:26] SKIP mimiciv_hosp.d_hcpcs (already done)
+[19:48:26] SKIP mimiciv_hosp.d_icd_diagnoses (already done)
+[19:48:26] SKIP mimiciv_hosp.d_icd_procedures (already done)
+[19:48:26] SKIP mimiciv_hosp.d_labitems (already done)
+[19:48:26] SKIP mimiciv_hosp.provider (already done)
+[19:48:26] SKIP mimiciv_hosp.patients (already done)
+[19:48:26] LOAD mimiciv_hosp.admissions from hosp/admissions.csv.gz
+SET
+TRUNCATE TABLE
+COPY 431231
+[19:48:27] ROWS mimiciv_hosp.admissions = 431231
+[19:48:27] LOAD mimiciv_hosp.drgcodes from hosp/drgcodes.csv.gz
+SET
+TRUNCATE TABLE
+COPY 604377
+[19:48:28] ROWS mimiciv_hosp.drgcodes = 604377
+[19:48:28] LOAD mimiciv_hosp.hcpcsevents from hosp/hcpcsevents.csv.gz
+SET
+TRUNCATE TABLE
+COPY 150771
+[19:48:28] ROWS mimiciv_hosp.hcpcsevents = 150771
+[19:48:28] LOAD mimiciv_hosp.diagnoses_icd from hosp/diagnoses_icd.csv.gz
+SET
+TRUNCATE TABLE
+COPY 4756326
+[19:48:30] ROWS mimiciv_hosp.diagnoses_icd = 4756326
+[19:48:30] LOAD mimiciv_hosp.procedures_icd from hosp/procedures_icd.csv.gz
+SET
+TRUNCATE TABLE
+COPY 669186
+[19:48:31] ROWS mimiciv_hosp.procedures_icd = 669186
+[19:48:31] LOAD mimiciv_hosp.services from hosp/services.csv.gz
+SET
+TRUNCATE TABLE
+COPY 468029
+[19:48:31] ROWS mimiciv_hosp.services = 468029
+[19:48:31] LOAD mimiciv_hosp.transfers from hosp/transfers.csv.gz
+SET
+TRUNCATE TABLE
+COPY 1890972
+[19:48:33] ROWS mimiciv_hosp.transfers = 1890972
+[19:48:33] LOAD mimiciv_hosp.microbiologyevents from hosp/microbiologyevents.csv.gz
+SET
+TRUNCATE TABLE
+COPY 3228713
+[19:48:41] ROWS mimiciv_hosp.microbiologyevents = 3228713
+[19:48:41] LOAD mimiciv_hosp.omr from hosp/omr.csv.gz
+SET
+TRUNCATE TABLE
+COPY 6439169
+[19:48:44] ROWS mimiciv_hosp.omr = 6439169
+[19:48:44] LOAD mimiciv_hosp.poe_detail from hosp/poe_detail.csv.gz
+SET
+TRUNCATE TABLE
+COPY 3879418
+[19:48:46] ROWS mimiciv_hosp.poe_detail = 3879418
+[19:48:46] LOAD mimiciv_icu.caregiver from icu/caregiver.csv.gz
+SET
+TRUNCATE TABLE
+COPY 15468
+[19:48:47] ROWS mimiciv_icu.caregiver = 15468
+[19:48:47] LOAD mimiciv_icu.d_items from icu/d_items.csv.gz
+SET
+TRUNCATE TABLE
+COPY 4014
+[19:48:47] ROWS mimiciv_icu.d_items = 4014
+[19:48:47] LOAD mimiciv_icu.icustays from icu/icustays.csv.gz
+SET
+TRUNCATE TABLE
+COPY 73181
+[19:48:48] ROWS mimiciv_icu.icustays = 73181
+[19:48:48] LOAD mimiciv_icu.datetimeevents from icu/datetimeevents.csv.gz
+SET
+TRUNCATE TABLE
+COPY 7112999
+[19:48:55] ROWS mimiciv_icu.datetimeevents = 7112999
+[19:48:55] LOAD mimiciv_icu.outputevents from icu/outputevents.csv.gz
+SET
+TRUNCATE TABLE
+COPY 4234967
+[19:48:59] ROWS mimiciv_icu.outputevents = 4234967
+[19:48:59] LOAD mimiciv_icu.procedureevents from icu/procedureevents.csv.gz
+SET
+TRUNCATE TABLE
+COPY 696092
+[19:49:01] ROWS mimiciv_icu.procedureevents = 696092
+[19:49:01] LOAD mimiciv_note.discharge_detail from note/discharge_detail.csv.gz
+SET
+TRUNCATE TABLE
+COPY 186138
+[19:49:01] ROWS mimiciv_note.discharge_detail = 186138
+[19:49:01] LOAD mimiciv_note.radiology_detail from note/radiology_detail.csv.gz
+SET
+TRUNCATE TABLE
+COPY 6046121
+[19:49:04] ROWS mimiciv_note.radiology_detail = 6046121
+[19:49:04] Stage A complete.

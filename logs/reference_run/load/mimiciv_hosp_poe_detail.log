@@ -1,0 +1,4 @@
+SET
+TRUNCATE TABLE
+COPY 3879418
+[19:48:46] ROWS mimiciv_hosp.poe_detail = 3879418

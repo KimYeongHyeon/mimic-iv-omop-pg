@@ -1,0 +1,23 @@
+NOTICE:  table "lk_datetimeevents_concept" does not exist, skipping
+DROP TABLE
+NOTICE:  table "lk_proc_event_clean" does not exist, skipping
+DROP TABLE
+NOTICE:  table "lk_datetimeevents_clean" does not exist, skipping
+DROP TABLE
+DROP TABLE
+SELECT 150771
+DROP TABLE
+SELECT 669186
+DROP TABLE
+SELECT 696092
+INSERT 0 7112999
+DROP TABLE
+SELECT 12498
+DROP TABLE
+SELECT 4668
+DROP TABLE
+SELECT 357
+DROP TABLE
+SELECT 150771
+INSERT 0 670232
+INSERT 0 7809091

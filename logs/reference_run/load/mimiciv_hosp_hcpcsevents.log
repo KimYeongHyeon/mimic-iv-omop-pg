@@ -1,0 +1,4 @@
+SET
+TRUNCATE TABLE
+COPY 150771
+[19:48:28] ROWS mimiciv_hosp.hcpcsevents = 150771

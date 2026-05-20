@@ -1,0 +1,4 @@
+SET
+TRUNCATE TABLE
+COPY 299712
+[19:47:36] ROWS mimiciv_hosp.patients = 299712

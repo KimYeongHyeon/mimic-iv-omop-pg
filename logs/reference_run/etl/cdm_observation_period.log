@@ -1,0 +1,17 @@
+NOTICE:  table "tmp_observation_period_clean" does not exist, skipping
+DROP TABLE
+SELECT 376580
+INSERT 0 180381
+INSERT 0 87433
+INSERT 0 158419
+INSERT 0 4215
+INSERT 0 532657
+INSERT 0 181226
+INSERT 0 848794
+NOTICE:  table "tmp_observation_period" does not exist, skipping
+INSERT 0 8592
+DROP TABLE
+SELECT 2378297
+DROP TABLE
+CREATE TABLE
+INSERT 0 259770

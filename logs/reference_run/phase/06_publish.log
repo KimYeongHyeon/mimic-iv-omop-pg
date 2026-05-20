@@ -1,0 +1,54 @@
+DO
+DO
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+      table_name      | table_type 
+----------------------+------------
+ attribute_definition | VIEW
+ care_site            | VIEW
+ cdm_source           | VIEW
+ cohort               | VIEW
+ cohort_attribute     | VIEW
+ cohort_definition    | VIEW
+ concept              | VIEW
+ concept_ancestor     | VIEW
+ concept_class        | VIEW
+ concept_relationship | VIEW
+ concept_synonym      | VIEW
+ condition_era        | VIEW
+ condition_occurrence | VIEW
+ cost                 | VIEW
+ death                | VIEW
+ device_exposure      | VIEW
+ domain               | VIEW
+ dose_era             | VIEW
+ drug_era             | VIEW
+ drug_exposure        | VIEW
+ drug_strength        | VIEW
+ fact_relationship    | VIEW
+ location             | VIEW
+ measurement          | VIEW
+ metadata             | VIEW
+ note                 | VIEW
+ note_nlp             | VIEW
+ observation          | VIEW
+ observation_period   | VIEW
+ payer_plan_period    | VIEW
+ person               | VIEW
+ procedure_occurrence | VIEW
+ provider             | VIEW
+ relationship         | VIEW
+ specimen             | VIEW
+ visit_detail         | VIEW
+ visit_occurrence     | VIEW
+ vocabulary           | VIEW
+(38 rows)
+
+[10:06:23] Publish complete.

@@ -1,0 +1,4 @@
+SET
+TRUNCATE TABLE
+COPY 313645063
+[20:03:47] DONE mimiciv_icu.chartevents rows=313645063 secs=320

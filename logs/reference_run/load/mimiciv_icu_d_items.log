@@ -1,0 +1,4 @@
+SET
+TRUNCATE TABLE
+COPY 4014
+[19:48:47] ROWS mimiciv_icu.d_items = 4014

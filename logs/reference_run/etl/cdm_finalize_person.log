@@ -1,0 +1,6 @@
+NOTICE:  table "tmp_person" does not exist, skipping
+DROP TABLE
+SELECT 259770
+TRUNCATE TABLE
+INSERT 0 259770
+DROP TABLE

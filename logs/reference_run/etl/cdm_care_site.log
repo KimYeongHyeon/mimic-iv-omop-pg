@@ -1,0 +1,6 @@
+NOTICE:  table "lk_trans_careunit_clean" does not exist, skipping
+DROP TABLE
+SELECT 39
+DROP TABLE
+CREATE TABLE
+INSERT 0 39

@@ -1,0 +1,117 @@
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020', '@summary'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+  warn: unmapped vars: {'@2020'}
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.
+<project_root>/scripts/bq_to_pg.py:201: SyntaxWarning: invalid escape sequence '\-'
+  """SAFE_CAST(x AS TYPE) -> nullif(...)::TYPE-ish, using try-cast pattern.

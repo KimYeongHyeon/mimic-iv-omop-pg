@@ -1,0 +1,4 @@
+SET
+TRUNCATE TABLE
+COPY 604377
+[19:48:28] ROWS mimiciv_hosp.drgcodes = 604377

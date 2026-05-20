@@ -1,0 +1,15 @@
+NOTICE:  table "src_procedureevents" does not exist, skipping
+DROP TABLE
+SELECT 696092
+NOTICE:  table "src_d_items" does not exist, skipping
+DROP TABLE
+NOTICE:  table "src_datetimeevents" does not exist, skipping
+SELECT 4014
+DROP TABLE
+SELECT 7112999
+DROP TABLE
+NOTICE:  table "src_chartevents" does not exist, skipping
+SELECT 313645063
+NOTICE:  table "src_outputevents" does not exist, skipping
+DROP TABLE
+SELECT 4234967

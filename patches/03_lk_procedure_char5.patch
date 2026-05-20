@@ -1,0 +1,11 @@
+--- a/etl/02_etl/lk_procedure.sql
++++ b/etl/02_etl/lk_procedure.sql
+@@ -267,7 +267,7 @@
+     32821                                   AS type_concept_id, -- OMOP4976894 EHR billing record
+     CAST(1 AS DOUBLE PRECISION)                      AS quantity,
+     CAST(NULL AS BIGINT)                     AS itemid,
+-    src.hcpcs_cd                            AS source_code,
++    CAST(src.hcpcs_cd AS TEXT)              AS source_code,  -- MOAI-PATCH: force TEXT to avoid CHAR(5) inference
+     CAST(NULL AS TEXT)                    AS source_label,
+     lc.source_vocabulary_id                 AS source_vocabulary_id,
+     lc.source_domain_id                     AS source_domain_id,

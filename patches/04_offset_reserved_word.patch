@@ -1,0 +1,11 @@
+--- a/etl/00_ddl/ddl_cdm_5_3_1.sql
++++ b/etl/00_ddl/ddl_cdm_5_3_1.sql
+@@ -338,7 +338,7 @@
+   note_id                     BIGINT                ,
+   section_concept_id          BIGINT                ,
+   snippet                     TEXT               ,
+-  offset                      TEXT               ,
++  "offset"                    TEXT               ,
+   lexical_variant             TEXT      not null ,
+   note_nlp_concept_id         BIGINT                ,
+   note_nlp_source_concept_id  BIGINT                ,

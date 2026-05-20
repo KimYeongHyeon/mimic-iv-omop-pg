@@ -1,0 +1,6 @@
+DROP TABLE
+SELECT 4756326
+DROP TABLE
+SELECT 5051872
+DROP TABLE
+NOTICE:  table "tmp_seq_num_to_concept" does not exist, skipping

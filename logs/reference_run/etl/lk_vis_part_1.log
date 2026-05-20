@@ -1,0 +1,12 @@
+NOTICE:  table "lk_admissions_clean" does not exist, skipping
+DROP TABLE
+SELECT 431231
+DROP TABLE
+NOTICE:  table "lk_transfers_clean" does not exist, skipping
+SELECT 1459741
+DROP TABLE
+NOTICE:  table "lk_services_duplicated" does not exist, skipping
+SELECT 1
+NOTICE:  table "lk_services_clean" does not exist, skipping
+DROP TABLE
+SELECT 468027

@@ -1,0 +1,9 @@
+NOTICE:  table "d_items_to_concept" does not exist, skipping
+DROP TABLE
+SELECT 2552
+DROP TABLE
+NOTICE:  table "d_labitems_to_concept" does not exist, skipping
+SELECT 1622
+DROP TABLE
+NOTICE:  table "d_micro_to_concept" does not exist, skipping
+SELECT 958

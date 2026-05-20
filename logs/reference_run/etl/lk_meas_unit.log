@@ -1,0 +1,8 @@
+DROP TABLE
+SELECT 7
+DROP TABLE
+NOTICE:  table "tmp_meas_unit" does not exist, skipping
+SELECT 1217
+DROP TABLE
+SELECT 1192
+DROP TABLE

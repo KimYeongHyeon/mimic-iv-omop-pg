@@ -1,0 +1,24 @@
+DROP TABLE
+NOTICE:  table "tmp_target_condition" does not exist, skipping
+NOTICE:  table "tmp_dates_un_condition" does not exist, skipping
+SELECT 10123189
+DROP TABLE
+SELECT 20246378
+DROP TABLE
+NOTICE:  table "tmp_dates_rows_condition" does not exist, skipping
+SELECT 20246378
+NOTICE:  table "tmp_enddates_condition" does not exist, skipping
+DROP TABLE
+SELECT 3812796
+DROP TABLE
+NOTICE:  table "tmp_conditionends" does not exist, skipping
+SELECT 10123189
+NOTICE:  drop cascades to view mimiciv_cdm.condition_era
+DROP TABLE
+CREATE TABLE
+INSERT 0 3812796
+DROP TABLE
+DROP TABLE
+DROP TABLE
+DROP TABLE
+DROP TABLE

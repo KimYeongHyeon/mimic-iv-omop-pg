@@ -1,0 +1,4 @@
+SET
+TRUNCATE TABLE
+COPY 73181
+[19:48:48] ROWS mimiciv_icu.icustays = 73181

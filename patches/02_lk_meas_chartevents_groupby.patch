@@ -1,0 +1,13 @@
+--- a/etl/02_etl/lk_meas_chartevents.sql
++++ b/etl/02_etl/lk_meas_chartevents.sql
+@@ -103,9 +103,10 @@
+     COUNT(*)                            AS row_count
+ FROM
+     mimiciv_etl.lk_chartevents_clean
++-- MOAI-PATCH: PG GROUP BY by ordinal (source_code/source_label collide with real columns)
+ GROUP BY
+-    source_code,
+-    source_label
++    2,
++    3
+ ;

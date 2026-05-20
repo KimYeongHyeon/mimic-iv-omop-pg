@@ -1,0 +1,4 @@
+SET
+TRUNCATE TABLE
+COPY 89200
+[19:47:34] ROWS mimiciv_hosp.d_hcpcs = 89200

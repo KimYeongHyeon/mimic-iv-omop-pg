@@ -1,0 +1,32 @@
+NOTICE:  drop cascades to view mimiciv_cdm.dose_era
+DROP TABLE
+CREATE TABLE
+NOTICE:  table "tmp_drugingredientexp" does not exist, skipping
+DROP TABLE
+SELECT 17852159
+DROP TABLE
+NOTICE:  table "tmp_drugwithdose" does not exist, skipping
+SELECT 17852159
+DROP TABLE
+NOTICE:  table "tmp_ctedosetarget" does not exist, skipping
+SELECT 196790
+DROP TABLE
+NOTICE:  table "tmp_ctedoseenddates_rawdata" does not exist, skipping
+SELECT 393580
+NOTICE:  table "tmp_ctedoseenddates_e" does not exist, skipping
+DROP TABLE
+SELECT 393580
+DROP TABLE
+NOTICE:  table "tmp_ctedoseenddates" does not exist, skipping
+SELECT 138746
+NOTICE:  table "tmp_ctedosefinalends" does not exist, skipping
+DROP TABLE
+SELECT 195262
+INSERT 0 138746
+DROP TABLE
+DROP TABLE
+DROP TABLE
+DROP TABLE
+DROP TABLE
+DROP TABLE
+DROP TABLE

@@ -1,0 +1,4 @@
+SET
+TRUNCATE TABLE
+COPY 39366291
+[19:53:13] DONE mimiciv_hosp.poe rows=39366291 secs=38

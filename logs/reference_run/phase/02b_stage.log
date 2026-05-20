@@ -1,0 +1,56 @@
+[19:49:46] BEGIN mimiciv_icu.ingredientevents from icu/ingredientevents.csv.gz
+SET
+TRUNCATE TABLE
+COPY 11627821
+[19:50:11] DONE mimiciv_icu.ingredientevents rows=11627821 secs=25
+[19:50:11] BEGIN mimiciv_icu.inputevents from icu/inputevents.csv.gz
+SET
+TRUNCATE TABLE
+COPY 8978893
+[19:50:43] DONE mimiciv_icu.inputevents rows=8978893 secs=32
+[19:50:43] BEGIN mimiciv_hosp.pharmacy from hosp/pharmacy.csv.gz
+SET
+TRUNCATE TABLE
+COPY 13584514
+[19:51:10] DONE mimiciv_hosp.pharmacy rows=13584514 secs=27
+[19:51:10] BEGIN mimiciv_hosp.prescriptions from hosp/prescriptions.csv.gz
+SET
+TRUNCATE TABLE
+COPY 15416708
+[19:51:35] DONE mimiciv_hosp.prescriptions rows=15416708 secs=25
+[19:51:35] BEGIN mimiciv_hosp.emar_detail from hosp/emar_detail.csv.gz
+SET
+TRUNCATE TABLE
+COPY 54744789
+[19:52:35] DONE mimiciv_hosp.emar_detail rows=54744789 secs=60
+[19:52:35] BEGIN mimiciv_hosp.poe from hosp/poe.csv.gz
+SET
+TRUNCATE TABLE
+COPY 39366291
+[19:53:13] DONE mimiciv_hosp.poe rows=39366291 secs=38
+[19:53:13] BEGIN mimiciv_hosp.emar from hosp/emar.csv.gz
+SET
+TRUNCATE TABLE
+COPY 26850359
+[19:53:49] DONE mimiciv_hosp.emar rows=26850359 secs=36
+[19:53:49] BEGIN mimiciv_note.radiology from note/radiology.csv.gz
+SET
+TRUNCATE TABLE
+COPY 2321355
+[19:54:16] DONE mimiciv_note.radiology rows=2321355 secs=27
+[19:54:16] BEGIN mimiciv_note.discharge from note/discharge.csv.gz
+SET
+TRUNCATE TABLE
+COPY 331793
+[19:55:13] DONE mimiciv_note.discharge rows=331793 secs=57
+[19:55:13] BEGIN mimiciv_hosp.labevents from hosp/labevents.csv.gz
+SET
+TRUNCATE TABLE
+COPY 118171367
+[19:58:27] DONE mimiciv_hosp.labevents rows=118171367 secs=194
+[19:58:27] BEGIN mimiciv_icu.chartevents from icu/chartevents.csv.gz
+SET
+TRUNCATE TABLE
+COPY 313645063
+[20:03:47] DONE mimiciv_icu.chartevents rows=313645063 secs=320
+[20:03:47] Stage B complete.

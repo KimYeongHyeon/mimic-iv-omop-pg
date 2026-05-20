@@ -1,0 +1,33 @@
+[19:54:28] source vocab synthea_cdm_aristotle.concept count = 6328777
+ schema | objects 
+--------+---------
+(0 rows)
+
+[19:54:51] source vocab synthea_cdm_aristotle.concept count = 6328777
+CREATE EXTENSION
+CREATE SCHEMA
+CREATE SCHEMA
+CREATE SCHEMA
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+   schema    | objects 
+-------------+---------
+ mimiciv_cdm |       0
+ mimiciv_etl |       0
+ mimiciv_voc |      10
+(3 rows)
+
+  count  
+---------
+ 6328777
+(1 row)
+
+[19:54:52] schemas+views created

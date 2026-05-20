@@ -1,0 +1,4 @@
+NOTICE:  drop cascades to view mimiciv_cdm.drug_exposure
+DROP TABLE
+CREATE TABLE
+INSERT 0 15453515

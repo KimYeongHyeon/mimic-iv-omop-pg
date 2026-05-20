@@ -1,0 +1,4 @@
+SET
+TRUNCATE TABLE
+COPY 3228713
+[19:48:41] ROWS mimiciv_hosp.microbiologyevents = 3228713

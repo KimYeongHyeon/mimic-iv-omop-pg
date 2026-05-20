@@ -1,0 +1,4 @@
+SET
+TRUNCATE TABLE
+COPY 85257
+[19:47:34] ROWS mimiciv_hosp.d_icd_procedures = 85257

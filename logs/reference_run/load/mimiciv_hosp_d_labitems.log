@@ -1,0 +1,4 @@
+SET
+TRUNCATE TABLE
+COPY 1622
+[19:47:35] ROWS mimiciv_hosp.d_labitems = 1622

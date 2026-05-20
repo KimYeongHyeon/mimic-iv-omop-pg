@@ -1,0 +1,4 @@
+SET
+TRUNCATE TABLE
+COPY 6046121
+[19:49:04] ROWS mimiciv_note.radiology_detail = 6046121

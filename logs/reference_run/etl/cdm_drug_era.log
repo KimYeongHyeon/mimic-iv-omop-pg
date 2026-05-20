@@ -1,0 +1,50 @@
+DROP TABLE
+SELECT 3046783
+NOTICE:  table "tmp_pretarget_drug" does not exist, skipping
+DROP TABLE
+NOTICE:  table "tmp_subenddates_un_drug" does not exist, skipping
+SELECT 17853382
+DROP TABLE
+SELECT 35706764
+DROP TABLE
+NOTICE:  table "tmp_subenddates_rows_drug" does not exist, skipping
+SELECT 35706764
+NOTICE:  table "tmp_subenddates_drug" does not exist, skipping
+DROP TABLE
+NOTICE:  table "temp_ends_drug" does not exist, skipping
+SELECT 10178896
+DROP TABLE
+SELECT 17853382
+DROP TABLE
+NOTICE:  table "tmp_sub_drug" does not exist, skipping
+SELECT 10178896
+NOTICE:  table "tmp_finaltarget_drug" does not exist, skipping
+DROP TABLE
+SELECT 10178896
+DROP TABLE
+NOTICE:  table "tmp_enddates_un_drug" does not exist, skipping
+SELECT 20357792
+DROP TABLE
+NOTICE:  table "tmp_enddates_rows_drug" does not exist, skipping
+SELECT 20357792
+NOTICE:  table "tmp_enddates_drug" does not exist, skipping
+DROP TABLE
+SELECT 8128730
+DROP TABLE
+NOTICE:  table "tmp_drugera_ends_drug" does not exist, skipping
+SELECT 10178896
+NOTICE:  drop cascades to view mimiciv_cdm.drug_era
+DROP TABLE
+CREATE TABLE
+INSERT 0 8128730
+DROP TABLE
+DROP TABLE
+DROP TABLE
+DROP TABLE
+DROP TABLE
+DROP TABLE
+DROP TABLE
+DROP TABLE
+DROP TABLE
+DROP TABLE
+DROP TABLE

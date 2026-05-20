@@ -1,0 +1,4 @@
+SET
+TRUNCATE TABLE
+COPY 2321355
+[19:54:16] DONE mimiciv_note.radiology rows=2321355 secs=27

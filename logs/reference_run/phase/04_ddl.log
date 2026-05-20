@@ -1,0 +1,10 @@
+CREATE TABLE
+DROP TABLE
+NOTICE:  table "cdm_drug_era" does not exist, skipping
+CREATE TABLE
+DROP TABLE
+NOTICE:  table "cdm_dose_era" does not exist, skipping
+CREATE TABLE
+NOTICE:  table "cdm_condition_era" does not exist, skipping
+DROP TABLE
+CREATE TABLE

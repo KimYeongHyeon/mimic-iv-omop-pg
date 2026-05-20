@@ -1,0 +1,28 @@
+NOTICE:  schema "mimiciv_custom" does not exist, skipping
+DROP SCHEMA
+CREATE SCHEMA
+CREATE TABLE
+NOTICE:  table "concept" does not exist, skipping
+DROP TABLE
+SELECT 5093
+NOTICE:  table "concept_relationship" does not exist, skipping
+DROP TABLE
+SELECT 5093
+         what          |  n   
+-----------------------+------
+ concepts              | 5093
+ concept_relationships | 5093
+ distinct vocabularies |   27
+(3 rows)
+
+DROP VIEW
+CREATE VIEW
+DROP VIEW
+CREATE VIEW
+           view           |   rows   
+--------------------------+----------
+ voc_concept              |  6333870
+ voc_concept_relationship | 39278823
+(2 rows)
+
+[08:40:45] custom vocab loaded

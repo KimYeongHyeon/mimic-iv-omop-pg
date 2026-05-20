@@ -1,0 +1,4 @@
+SET
+TRUNCATE TABLE
+COPY 15416708
+[19:51:35] DONE mimiciv_hosp.prescriptions rows=15416708 secs=25

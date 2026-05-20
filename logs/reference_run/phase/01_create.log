@@ -1,0 +1,126 @@
+DROP SCHEMA
+psql:/scripts/create.sql:9: NOTICE:  schema "mimiciv_hosp" does not exist, skipping
+CREATE SCHEMA
+psql:/scripts/create.sql:11: NOTICE:  schema "mimiciv_icu" does not exist, skipping
+DROP SCHEMA
+CREATE SCHEMA
+DROP SCHEMA
+psql:/scripts/create.sql:13: NOTICE:  schema "mimiciv_derived" does not exist, skipping
+CREATE SCHEMA
+DROP TABLE
+psql:/scripts/create.sql:22: NOTICE:  table "admissions" does not exist, skipping
+CREATE TABLE
+psql:/scripts/create.sql:43: NOTICE:  table "d_hcpcs" does not exist, skipping
+DROP TABLE
+psql:/scripts/create.sql:52: NOTICE:  table "diagnoses_icd" does not exist, skipping
+CREATE TABLE
+DROP TABLE
+CREATE TABLE
+psql:/scripts/create.sql:62: NOTICE:  table "d_icd_diagnoses" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+DROP TABLE
+psql:/scripts/create.sql:70: NOTICE:  table "d_icd_procedures" does not exist, skipping
+CREATE TABLE
+psql:/scripts/create.sql:78: NOTICE:  table "d_labitems" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+DROP TABLE
+psql:/scripts/create.sql:87: NOTICE:  table "drgcodes" does not exist, skipping
+CREATE TABLE
+psql:/scripts/create.sql:99: NOTICE:  table "emar_detail" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+DROP TABLE
+psql:/scripts/create.sql:137: NOTICE:  table "emar" does not exist, skipping
+CREATE TABLE
+psql:/scripts/create.sql:154: NOTICE:  table "hcpcsevents" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+psql:/scripts/create.sql:165: NOTICE:  table "labevents" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+psql:/scripts/create.sql:186: NOTICE:  table "microbiologyevents" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+DROP TABLE
+psql:/scripts/create.sql:216: NOTICE:  table "omr" does not exist, skipping
+psql:/scripts/create.sql:226: NOTICE:  table "patients" does not exist, skipping
+CREATE TABLE
+DROP TABLE
+psql:/scripts/create.sql:237: NOTICE:  table "pharmacy" does not exist, skipping
+CREATE TABLE
+DROP TABLE
+psql:/scripts/create.sql:269: NOTICE:  table "poe_detail" does not exist, skipping
+CREATE TABLE
+DROP TABLE
+CREATE TABLE
+DROP TABLE
+psql:/scripts/create.sql:279: NOTICE:  table "poe" does not exist, skipping
+CREATE TABLE
+DROP TABLE
+psql:/scripts/create.sql:296: NOTICE:  table "prescriptions" does not exist, skipping
+psql:/scripts/create.sql:322: NOTICE:  table "procedures_icd" does not exist, skipping
+CREATE TABLE
+DROP TABLE
+psql:/scripts/create.sql:333: NOTICE:  table "provider" does not exist, skipping
+CREATE TABLE
+DROP TABLE
+psql:/scripts/create.sql:339: NOTICE:  table "services" does not exist, skipping
+CREATE TABLE
+DROP TABLE
+psql:/scripts/create.sql:349: NOTICE:  table "transfers" does not exist, skipping
+CREATE TABLE
+DROP TABLE
+CREATE TABLE
+psql:/scripts/create.sql:363: NOTICE:  table "caregiver" does not exist, skipping
+DROP TABLE
+psql:/scripts/create.sql:369: NOTICE:  table "chartevents" does not exist, skipping
+CREATE TABLE
+DROP TABLE
+CREATE TABLE
+DROP TABLE
+psql:/scripts/create.sql:385: NOTICE:  table "datetimeevents" does not exist, skipping
+CREATE TABLE
+DROP TABLE
+psql:/scripts/create.sql:400: NOTICE:  table "d_items" does not exist, skipping
+CREATE TABLE
+DROP TABLE
+psql:/scripts/create.sql:414: NOTICE:  table "icustays" does not exist, skipping
+psql:/scripts/create.sql:427: NOTICE:  table "ingredientevents" does not exist, skipping
+CREATE TABLE
+DROP TABLE
+CREATE TABLE
+DROP TABLE
+psql:/scripts/create.sql:449: NOTICE:  table "inputevents" does not exist, skipping
+psql:/scripts/create.sql:480: NOTICE:  table "outputevents" does not exist, skipping
+CREATE TABLE
+DROP TABLE
+psql:/scripts/create.sql:494: NOTICE:  table "procedureevents" does not exist, skipping
+CREATE TABLE
+DROP TABLE
+CREATE TABLE
+psql:/scripts/create.sql:9: NOTICE:  schema "mimiciv_note" does not exist, skipping
+DROP SCHEMA
+CREATE SCHEMA
+DROP TABLE
+psql:/scripts/create.sql:18: NOTICE:  table "discharge" does not exist, skipping
+CREATE TABLE
+DROP TABLE
+psql:/scripts/create.sql:31: NOTICE:  table "radiology" does not exist, skipping
+psql:/scripts/create.sql:44: NOTICE:  table "discharge_detail" does not exist, skipping
+CREATE TABLE
+DROP TABLE
+psql:/scripts/create.sql:55: NOTICE:  table "radiology_detail" does not exist, skipping
+CREATE TABLE
+DROP TABLE
+CREATE TABLE
+     schema      | tables 
+-----------------+--------
+ mimiciv_derived |      0
+ mimiciv_hosp    |     22
+ mimiciv_icu     |      9
+ mimiciv_note    |      4
+(4 rows)
+
+19:36:09 DONE: schemas created

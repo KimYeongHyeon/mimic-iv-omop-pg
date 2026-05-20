@@ -1,0 +1,71 @@
+[20:23:22] OK   01_staging/st_core.sql  8s
+[20:29:00] FAIL 01_staging/st_hosp.sql  338s -- see <project_root>/logs/etl/st_hosp.log
+[20:33:15] OK   01_staging/st_core.sql  7s
+[20:39:33] OK   01_staging/st_hosp.sql  378s
+[20:49:58] FAIL 01_staging/st_icu.sql  625s -- see <project_root>/logs/etl/st_icu.log
+[21:10:24] OK   01_staging/st_icu.sql  1022s
+[21:10:24] OK   01_staging/voc_copy_to_target_dataset.sql  0s
+[21:10:24] OK   02_etl/cdm_location.sql  0s
+[21:10:25] OK   02_etl/cdm_care_site.sql  1s
+[21:10:30] OK   02_etl/cdm_person.sql  5s
+[21:10:31] FAIL 02_etl/cdm_death.sql  1s -- see <project_root>/logs/etl/cdm_death.log
+[21:16:48] OK   02_etl/cdm_death.sql  1s
+[21:16:54] OK   02_etl/lk_vis_part_1.sql  6s
+[21:16:55] OK   02_etl/lk_meas_unit.sql  1s
+[21:16:55] FAIL 02_etl/lk_meas_chartevents.sql  0s -- see <project_root>/logs/etl/lk_meas_chartevents.log
+[21:24:51] FAIL 02_etl/lk_meas_chartevents.sql  386s -- see <project_root>/logs/etl/lk_meas_chartevents.log
+[21:57:53] FAIL 02_etl/lk_meas_chartevents.sql  1017s -- see <project_root>/logs/etl/lk_meas_chartevents.log
+[22:35:45] OK   02_etl/lk_meas_chartevents.sql  1969s
+[22:49:00] OK   02_etl/lk_meas_labevents.sql  795s
+[22:49:35] FAIL 02_etl/lk_meas_specimen.sql  35s -- see <project_root>/logs/etl/lk_meas_specimen.log
+[00:16:43] OK   02_etl/lk_meas_specimen.sql  54s
+[00:16:43] FAIL 02_etl/lk_vis_part_2.sql  0s -- see <project_root>/logs/etl/lk_vis_part_2.log
+[00:27:34] OK   02_etl/lk_vis_part_2.sql  80s
+[00:27:39] OK   02_etl/cdm_visit_occurrence.sql  5s
+[00:27:44] OK   02_etl/cdm_visit_detail.sql  5s
+[00:28:15] OK   02_etl/lk_cond_diagnoses.sql  31s
+[00:28:30] FAIL 02_etl/lk_procedure.sql  15s -- see <project_root>/logs/etl/lk_procedure.log
+[00:51:11] OK   02_etl/lk_procedure.sql  24s
+[00:51:25] OK   02_etl/lk_observation.sql  14s
+[00:52:59] OK   02_etl/cdm_condition_occurrence.sql  94s
+[00:54:28] OK   02_etl/cdm_procedure_occurrence.sql  89s
+[00:54:30] OK   02_etl/cdm_specimen.sql  2s
+[00:59:56] FAIL 02_etl/cdm_measurement.sql  326s -- see <project_root>/logs/etl/cdm_measurement.log
+[01:05:37] FAIL 02_etl/lk_meas_outputevents.sql  3s -- see <project_root>/logs/etl/lk_meas_outputevents.log
+[01:11:12] OK   02_etl/lk_meas_outputevents.sql  20s
+[01:16:39] OK   02_etl/cdm_measurement.sql  327s
+[01:19:39] OK   02_etl/lk_drug.sql  180s
+[01:20:41] OK   02_etl/cdm_drug_exposure.sql  62s
+[01:22:06] OK   02_etl/cdm_device_exposure.sql  85s
+[01:23:39] OK   02_etl/cdm_observation.sql  93s
+[01:25:42] OK   02_etl/cdm_observation_period.sql  123s
+[01:25:42] OK   02_etl/cdm_finalize_person.sql  0s
+[01:25:51] OK   02_etl/cdm_fact_relationship.sql  9s
+[01:26:22] OK   02_etl/cdm_condition_era.sql  31s
+[01:29:45] OK   02_etl/cdm_drug_era.sql  203s
+[01:31:01] OK   02_etl/cdm_dose_era.sql  76s
+[01:37:33] OK   02_etl/ext_d_itemid_to_concept.sql  392s
+[01:37:34] FAIL 02_etl/cdm_cdm_source.sql  1s -- see <project_root>/logs/etl/cdm_cdm_source.log
+[02:14:24] FAIL 02_etl/cdm_cdm_source.sql  0s -- see <project_root>/logs/etl/cdm_cdm_source.log
+[08:17:32] OK   02_etl/cdm_cdm_source.sql  0s
+[08:17:32] OK   02_etl/cdm_provider.sql  0s
+[08:43:36] OK   02_etl/lk_meas_unit.sql  151s
+[09:14:39] OK   02_etl/lk_meas_chartevents.sql  1863s
+[09:29:39] OK   02_etl/lk_meas_labevents.sql  900s
+[09:30:50] OK   02_etl/lk_meas_specimen.sql  71s
+[09:31:10] OK   02_etl/lk_meas_outputevents.sql  20s
+[09:31:45] OK   02_etl/lk_cond_diagnoses.sql  35s
+[09:32:37] OK   02_etl/lk_procedure.sql  52s
+[09:32:55] OK   02_etl/lk_observation.sql  18s
+[09:36:51] OK   02_etl/cdm_condition_occurrence.sql  236s
+[09:38:57] OK   02_etl/cdm_procedure_occurrence.sql  126s
+[09:39:00] OK   02_etl/cdm_specimen.sql  3s
+[09:49:49] OK   02_etl/cdm_measurement.sql  649s
+[09:53:16] OK   02_etl/lk_drug.sql  207s
+[09:54:31] OK   02_etl/cdm_drug_exposure.sql  75s
+[09:56:15] OK   02_etl/cdm_device_exposure.sql  104s
+[09:58:18] OK   02_etl/cdm_observation.sql  123s
+[09:58:41] OK   02_etl/cdm_fact_relationship.sql  23s
+[09:59:52] OK   02_etl/cdm_condition_era.sql  71s
+[10:04:35] OK   02_etl/cdm_drug_era.sql  283s
+[10:05:52] OK   02_etl/cdm_dose_era.sql  77s

@@ -1,0 +1,12 @@
+--- a/etl/01_staging/st_hosp.sql
++++ b/etl/01_staging/st_hosp.sql
+@@ -245,7 +245,7 @@
+ -- raw d_micro is no longer available both in mimic_hosp and mimiciv_hosp
+ -- -------------------------------------------------------------------
+
+--- DROP TABLE IF EXISTS mimiciv_etl.src_d_micro CASCADE;
+-CREATE TABLE mimiciv_etl.src_d_micro AS
++-- DROP TABLE IF EXISTS mimiciv_etl.src_d_micro CASCADE;
++-- CREATE TABLE mimiciv_etl.src_d_micro AS
+ -- SELECT
+ --     itemid                      AS itemid, -- NUMERIC ID

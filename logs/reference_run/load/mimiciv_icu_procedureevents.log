@@ -1,0 +1,4 @@
+SET
+TRUNCATE TABLE
+COPY 696092
+[19:49:01] ROWS mimiciv_icu.procedureevents = 696092

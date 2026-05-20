@@ -1,0 +1,30 @@
+# MIMIC-IV data — controlled access, never commit
+data/
+*.csv.gz
+*.csv
+MIMIC-IV-*.zip
+
+# upstream clones
+ohdsi-mimic/
+mimic-code/
+
+# runtime state
+logs/*
+!logs/reference_run/
+todolist/
+dist/
+
+# secrets
+.env
+*.password
+*.key
+
+# python
+__pycache__/
+*.pyc
+
+# editor/OS
+.vscode/
+.idea/
+.DS_Store
+*.swp

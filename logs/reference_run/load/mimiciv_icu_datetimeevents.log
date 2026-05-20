@@ -1,0 +1,4 @@
+SET
+TRUNCATE TABLE
+COPY 7112999
+[19:48:55] ROWS mimiciv_icu.datetimeevents = 7112999

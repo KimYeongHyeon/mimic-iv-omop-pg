@@ -1,0 +1,4 @@
+SET
+TRUNCATE TABLE
+COPY 11627821
+[19:50:11] DONE mimiciv_icu.ingredientevents rows=11627821 secs=25
