@@ -116,6 +116,50 @@ delete its `logs/etl/<step>.done` marker and re-run.
 
 ---
 
+## Why PostgreSQL instead of BigQuery
+
+PhysioNet permits BigQuery deployment of MIMIC-IV, and the official OHDSI/MIMIC
+pipeline targets BQ. So why a Postgres port?
+
+**Three concrete advantages over BigQuery for OHDSI/MIMIC workloads:**
+
+1. **Zero-shim integration with the Broadsea/ATLAS/WebAPI stack.**
+   Broadsea — the de-facto OHDSI deployment — is PostgreSQL-native.
+   ATLAS, WebAPI, Achilles, DataQualityDashboard, ARES Indexer all consume
+   `mimiciv_cdm` as a first-class data source with no JDBC driver
+   installation, no IAM setup, no datasource adapter configuration.
+
+2. **Bit-level reproducibility.**
+   Pinned Docker image + Postgres patch version + git commit hash =
+   identical results 5 years from now. BigQuery silently upgrades its SQL
+   engine; queries that worked yesterday can return different results today
+   (BQ Standard SQL semantics have changed multiple times since 2020).
+   Important for FAIR-aligned journals (Scientific Data, GigaScience) and
+   any reproducibility-conscious research.
+
+3. **Operational fit with existing institutional infrastructure.**
+   Local development without internet · pgAdmin/DBeaver/psql tooling ·
+   user-controlled indexing (btree/gin/gist) · PITR via WAL · pgaudit for
+   compliance logging · `postgres_fdw` to federate with existing hospital
+   PG systems (REDCap, i2b2, OMOP from other source EHRs) without data
+   movement. None of these are easy on BigQuery.
+
+**A note on data governance:** MIMIC-IV is already de-identified by
+PhysioNet via HIPAA Safe Harbor (date shifting, geographic generalization,
+free-text scrubbing). Strictly speaking, MIMIC-IV is no longer PHI, so the
+HIPAA/PhysioNet rules permit cloud deployment. The governance argument for
+on-prem PostgreSQL becomes substantive only when adapting this pipeline to
+**your institution's own EHR data** — at which point PHI rules return in
+full force and on-prem operation matters.
+
+**When BigQuery is genuinely better:** at TB-PB scale (multi-million-patient
+networks like the US VA), for in-database ML via BigQuery ML, or when tight
+integration with other GCP services (Looker, Vertex AI) is required. For
+MIMIC-IV's 260K patients (~200 GB) and the OHDSI analytic stack, PostgreSQL
+is the better fit.
+
+---
+
 ## What was hard
 
 The official [OHDSI/MIMIC](https://github.com/OHDSI/MIMIC) ETL is **BigQuery-only**.
