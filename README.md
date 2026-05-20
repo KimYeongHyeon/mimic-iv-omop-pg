@@ -80,6 +80,7 @@ export VOCAB_SOURCE_SCHEMA=synthea_cdm_aristotle
 ./run.sh m7    # ~30 sec, verification report
 ./run.sh m8    # ~10 sec, init results schema (ATLAS cohort/profile tables)
 ./run.sh m9    # ~1.5-3 h, run Achilles → enables ATLAS Data Source dashboard
+./run.sh m10   # ~2 h, run DataQualityDashboard → ~3,500 quality checks
 ```
 
 Phases are independent and idempotent. To re-run any single step in m5,
@@ -140,8 +141,9 @@ Full details: [docs/CONVERSION_PATTERNS.md](docs/CONVERSION_PATTERNS.md).
 
 ## Verification
 
-Full report: **[docs/VERIFICATION.md](docs/VERIFICATION.md)** (what we tested,
-how, and what we did **not** test).
+Full reports:
+- **[docs/VERIFICATION.md](docs/VERIFICATION.md)** — what we tested, how, what we did **not** test.
+- **[docs/DQD_RESULTS.md](docs/DQD_RESULTS.md)** — full DataQualityDashboard run with root-cause analysis of the 85 demo failures (none originate in our port).
 
 Short version: ran `./run.sh m7` plus a separate demo-subset run, then ran
 [OHDSI's own unit-test suite](https://github.com/MIT-LCP/mimic-iv-demo-omop/tree/master/test/ut)
@@ -164,8 +166,9 @@ against our output:
   execution; see [docs/VERIFICATION.md §L1](docs/VERIFICATION.md). Some
   fields (`*_id` from FARM_FINGERPRINT vs md5, `trace_id` JSON key order)
   will inherently differ even with bit-perfect logic.
-- **DataQualityDashboard full sweep (~3,500 checks) NOT run**. The HADES
-  container has DQD 2.8.0 ready; a future `m10_dqd.sh` could add it.
+- **DataQualityDashboard full sweep (~3,500 checks)**: demo (100 patients) complete
+  with 93.5 % pass rate on applicable checks; full 260K run in progress, results
+  appended to [docs/DQD_RESULTS.md](docs/DQD_RESULTS.md) on completion.
 - **MIMIC-IV v3.1 NOT supported** (only v2.2).
 - **Waveform module stubbed empty**.
 

@@ -18,6 +18,7 @@
 #   m7  verify CDM quality (structural / cardinality / mapping / FK)
 #   m8  init results schema for ATLAS cohort/profiles (36 tables)
 #   m9  run Achilles characterization (~1.5-3 h) — enables ATLAS dashboards
+#   m10 run DataQualityDashboard (~2 h) — ~3,500 quality checks
 #
 set -euo pipefail
 cd "$(dirname "$0")"
@@ -132,6 +133,11 @@ m9_achilles() {
   ./scripts/09_run_achilles.sh
 }
 
+m10_dqd() {
+  echo "=== M10: Run DataQualityDashboard (~2 h) ==="
+  ./scripts/10_run_dqd.sh
+}
+
 case "$PHASE" in
   m0|check)       m0_check ;;
   m1)             m0_check; m1_load_raw ;;
@@ -143,11 +149,12 @@ case "$PHASE" in
   m7|verify)      m7_verify ;;
   m8|results)     m8_results_schema ;;
   m9|achilles)    m9_achilles ;;
+  m10|dqd)        m10_dqd ;;
   m1-m2)          m0_check; m1_load_raw; m2_port_sql ;;
   m2-m5)          m2_port_sql; m3_schemas; m4_custom_vocab; m5_etl ;;
-  m8-m9)          m8_results_schema; m9_achilles ;;
-  all|"")         m0_check; m1_load_raw; m2_port_sql; m3_schemas; m4_custom_vocab; m5_etl; m6_publish; m7_verify; m8_results_schema; m9_achilles ;;
-  *)              echo "usage: $0 [m0|m1|m2|m3|m4|m5|m6|m7|m8|m9|all]"; exit 2 ;;
+  m8-m10)         m8_results_schema; m9_achilles; m10_dqd ;;
+  all|"")         m0_check; m1_load_raw; m2_port_sql; m3_schemas; m4_custom_vocab; m5_etl; m6_publish; m7_verify; m8_results_schema; m9_achilles; m10_dqd ;;
+  *)              echo "usage: $0 [m0|m1|m2|m3|m4|m5|m6|m7|m8|m9|m10|all]"; exit 2 ;;
 esac
 
 echo
