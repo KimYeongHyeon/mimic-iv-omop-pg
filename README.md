@@ -1,5 +1,7 @@
 # mimic-iv-omop-pg
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20320559.svg)](https://doi.org/10.5281/zenodo.20320559)
+
 End-to-end MIMIC-IV → OMOP CDM v5.3.1 conversion on PostgreSQL,
 without BigQuery, without R, without restarting your existing OHDSI stack.
 
@@ -304,14 +306,18 @@ Manual BibTeX (replace the `url`/`version` if you depend on a later release):
                   of the {OHDSI}/{MIMIC} {ETL}},
   year         = {2026},
   version      = {1.0.0},
-  url          = {https://github.com/KimYeongHyeon/mimic-iv-omop-pg}
+  doi          = {10.5281/zenodo.20320559},
+  url          = {https://doi.org/10.5281/zenodo.20320559}
 }
 ```
 
-A Zenodo DOI will be added here once the first GitHub release is
-archived. If you publish work that used the live `main` branch
-before the DOI was issued, please cite the GitHub URL plus the
-exact commit hash you ran against.
+**Zenodo DOI (v1.0.0)**: [`10.5281/zenodo.20320559`](https://doi.org/10.5281/zenodo.20320559)
+
+The DOI above resolves to the v1.0.0 snapshot. Zenodo also
+issues a *concept DOI* that always redirects to the latest
+release — use that one if you want to cite the project as
+an evolving body of work. For exact reproducibility, cite
+the version-specific DOI plus the commit hash you ran.
 
 Please **also cite** the upstream and underlying resources you
 benefit from:

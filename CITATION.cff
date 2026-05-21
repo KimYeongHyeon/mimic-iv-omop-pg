@@ -35,7 +35,7 @@ repository-code: "https://github.com/KimYeongHyeon/mimic-iv-omop-pg"
 url: "https://github.com/KimYeongHyeon/mimic-iv-omop-pg"
 version: "1.0.0"
 date-released: "2026-05-21"
-# doi: "10.5281/zenodo.XXXXXXX"   # uncomment + fill after Zenodo release
+doi: "10.5281/zenodo.20320559"
 preferred-citation:
   type: software
   title: "mimic-iv-omop-pg: A PostgreSQL implementation of the OHDSI/MIMIC ETL"
@@ -46,3 +46,4 @@ preferred-citation:
   year: 2026
   url: "https://github.com/KimYeongHyeon/mimic-iv-omop-pg"
   version: "1.0.0"
+  doi: "10.5281/zenodo.20320559"
