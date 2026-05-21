@@ -288,6 +288,43 @@ All knobs are env vars; defaults are for the stock Broadsea deployment:
 
 ---
 
+## Citation
+
+If you use `mimic-iv-omop-pg` in your research, please cite it via the
+`CITATION.cff` file in this repository — GitHub renders a "Cite this
+repository" button on the repo page that copies the citation in
+APA / BibTeX / RIS formats.
+
+Manual BibTeX (replace the `url`/`version` if you depend on a later release):
+
+```bibtex
+@software{kim2026mimicivomop_pg,
+  author       = {Kim, YeongHyeon},
+  title        = {{mimic-iv-omop-pg}: A {PostgreSQL} implementation
+                  of the {OHDSI}/{MIMIC} {ETL}},
+  year         = {2026},
+  version      = {1.0.0},
+  url          = {https://github.com/KimYeongHyeon/mimic-iv-omop-pg}
+}
+```
+
+A Zenodo DOI will be added here once the first GitHub release is
+archived. If you publish work that used the live `main` branch
+before the DOI was issued, please cite the GitHub URL plus the
+exact commit hash you ran against.
+
+Please **also cite** the upstream and underlying resources you
+benefit from:
+
+- **MIMIC-IV** — Johnson et al. (2023), *Scientific Data* —
+  https://doi.org/10.1038/s41597-022-01899-x
+- **OHDSI/MIMIC ETL (upstream BigQuery version)** —
+  https://github.com/OHDSI/MIMIC
+- **OMOP Common Data Model** —
+  https://github.com/OHDSI/CommonDataModel
+
+---
+
 ## License & attributions
 
 This repository wraps and adapts several upstream projects. Each component

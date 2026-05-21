@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+title: "mimic-iv-omop-pg: A PostgreSQL implementation of the OHDSI/MIMIC ETL"
+message: "If you use this software, please cite it using the metadata in this file."
+type: software
+authors:
+  - family-names: Kim
+    given-names: YeongHyeon
+    affiliation: "Seoul National University"
+    email: yeonghyeonkim4@gmail.com
+    # orcid: "https://orcid.org/0000-0000-0000-0000"   # fill in your ORCID
+abstract: >-
+  mimic-iv-omop-pg is an end-to-end PostgreSQL implementation of the
+  OHDSI/MIMIC ETL, which is officially BigQuery-only. The pipeline
+  converts MIMIC-IV v2.2 to OMOP Common Data Model v5.3.1 in an
+  existing OHDSI Broadsea PostgreSQL stack via a single command,
+  with idempotent phases, an automated BigQuery-to-PostgreSQL SQL
+  converter (bq_to_pg.py), five mechanical patches, and reuse of an
+  already-loaded Athena vocabulary through views. The repository
+  includes a full DataQualityDashboard validation (1,990 checks),
+  clinical replication across six cohorts (sepsis, AKI by KDIGO,
+  heart failure, acute MI, atrial fibrillation, type 2 diabetes),
+  and comparative documentation against other community
+  MIMIC-to-OMOP implementations.
+keywords:
+  - MIMIC-IV
+  - OMOP CDM
+  - OHDSI
+  - PostgreSQL
+  - clinical informatics
+  - ETL
+  - data quality
+  - reproducibility
+license: MIT
+repository-code: "https://github.com/KimYeongHyeon/mimic-iv-omop-pg"
+url: "https://github.com/KimYeongHyeon/mimic-iv-omop-pg"
+version: "1.0.0"
+date-released: "2026-05-21"
+# doi: "10.5281/zenodo.XXXXXXX"   # uncomment + fill after Zenodo release
+preferred-citation:
+  type: software
+  title: "mimic-iv-omop-pg: A PostgreSQL implementation of the OHDSI/MIMIC ETL"
+  authors:
+    - family-names: Kim
+      given-names: YeongHyeon
+      affiliation: "Seoul National University"
+  year: 2026
+  url: "https://github.com/KimYeongHyeon/mimic-iv-omop-pg"
+  version: "1.0.0"
