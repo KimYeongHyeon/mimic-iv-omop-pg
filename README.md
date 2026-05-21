@@ -1,6 +1,6 @@
 # mimic-iv-omop-pg
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20320559.svg)](https://doi.org/10.5281/zenodo.20320559)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20320559-blue?logo=doi)](https://doi.org/10.5281/zenodo.20320559)
 
 End-to-end MIMIC-IV → OMOP CDM v5.3.1 conversion on PostgreSQL,
 without BigQuery, without R, without restarting your existing OHDSI stack.
