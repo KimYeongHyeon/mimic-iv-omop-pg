@@ -188,6 +188,7 @@ Full details: [docs/CONVERSION_PATTERNS.md](docs/CONVERSION_PATTERNS.md).
 Full reports:
 - **[docs/VERIFICATION.md](docs/VERIFICATION.md)** — what we tested, how, what we did **not** test.
 - **[docs/DQD_RESULTS.md](docs/DQD_RESULTS.md)** — DataQualityDashboard demo (100 pts, 85 failures) **and** full (260K pts, 93 failures, 92 post-Group-E-fix) runs with root-cause analysis. Zero failures originate in our port code.
+- **[docs/RELATED_WORK.md](docs/RELATED_WORK.md)** — how this project relates to other MIMIC-to-OMOP implementations (OHDSI/MIMIC BigQuery, kole-geeta PG fork, CogStack/dbt DuckDB, MIT-LCP MIMIC-III) and where each fits best.
 
 Short version: ran `./run.sh m7` plus a separate demo-subset run, then ran
 [OHDSI's own unit-test suite](https://github.com/MIT-LCP/mimic-iv-demo-omop/tree/master/test/ut)
